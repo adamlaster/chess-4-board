@@ -272,13 +272,13 @@ public class GodotWebView extends GodotPlugin {
                                     "Chess 4 Board",
                                     false,
                                     new String[]{"open_menu"},
-                                    new String[]{"Web Menu"},
+                                    new String[]{"Chess 4 Board Menu"},
                                     new String[]{"square"},
                                     null,
                                     null,
                                     null
                             );
-                            Log.i(TAG, "Registered Board pause context with Web Menu button after SystemOverlayService bound");
+                            Log.i(TAG, "Registered Board pause context with Chess 4 Board Menu button after SystemOverlayService bound");
                         }
                         return;
                     }

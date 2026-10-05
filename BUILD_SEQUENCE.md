@@ -2,7 +2,7 @@
 
 This document details the complete build, packaging, and deployment pipeline for **Chess 4 Board** (`com.lastersoft.chess4board`) running on the **Board** digital tabletop device.
 
-The project uses a custom Android native plugin (`com.lastersoft.godotwebview.GodotWebView`) integrated with the Board OS SDK—featuring a Board system menu "Web Menu" trigger, 2x tabletop-scaled centered launcher card, Desktop/Mobile User-Agent switching, 4-way orientation cycling, zoom controls, HTML5 fullscreen/DRM video playback, and native multi-touch pass-through.
+The project uses a custom Android native plugin (`com.lastersoft.godotwebview.GodotWebView`) integrated with the Board OS SDK—featuring a Board system menu "Chess 4 Board Menu" trigger, 2x tabletop-scaled centered launcher card, Desktop/Mobile User-Agent switching, 4-way orientation cycling, zoom controls, HTML5 fullscreen/DRM video playback, and native multi-touch pass-through.
 
 ---
 

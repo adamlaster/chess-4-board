@@ -26,7 +26,7 @@ func _ready() -> void:
 		"game_name": "Chess 4 Board",
 		"offer_save_option": false,
 		"custom_buttons": [
-			{ "id": "open_menu", "title": "Web Menu", "icon": Board.pause.ICON_SQUARE }
+			{ "id": "open_menu", "title": "Chess 4 Board Menu", "icon": Board.pause.ICON_SQUARE }
 		]
 	})
 

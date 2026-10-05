@@ -158,14 +158,16 @@ Because the Board OS enforces native SDK validation (`libboard.so` / `libnativeB
 
 ---
 
-### Phase 9: Godot Resource Cleanup & Canonical Root Script / Documentation
+### Phase 9: Godot Resource Cleanup, Canonical Root Docs/Script & "Chess 4 Board Menu" Rename
 1. **Removed Unused Godot Resources in `chess-4-board`:**
    - Deleted legacy test scripts and `.uid` sidecars (`app.gd`, `button_2.gd`, `button_3.gd`, `button_test.gd`, `panel_container.gd`, `v_box_container.gd`).
    - Removed unused icon and import files (`icon.svg`, `icon_square.png`, `splash_download.png.import`) and orphaned `.godot/imported/` cache entries.
    - Removed unused `assets/models/model.tflite` (~952 KB), as `Chess 4 Board` uses touch passthrough rather than piece glyph detection.
-2. **Consolidated Single Canonical `build_and_deploy.sh`, `BUILD_SEQUENCE.md`, and `PROJECT_HISTORY.md` in Root (`/Users/adamlaster/Development/BoardGames/Chess4Board/`):**
+2. **Consolidated Single Canonical `README.md`, `AGENTS.md`, `BUILD_SEQUENCE.md`, `PROJECT_HISTORY.md`, and `build_and_deploy.sh` in Root (`/Users/adamlaster/Development/BoardGames/Chess4Board/`):**
    - Moved `build_and_deploy.sh` to the repository root (`/Users/adamlaster/Development/BoardGames/Chess4Board/build_and_deploy.sh`) and removed duplicate scripts from `chess-4-board/` and `godot-webview/`.
-   - Consolidated `BUILD_SEQUENCE.md` and `PROJECT_HISTORY.md` exclusively in the repository root and removed all duplicate copies in `chess-4-board/`, `godot-webview/`, and `Documents/AI_Markdown/`.
+   - Consolidated `README.md`, `AGENTS.md`, `BUILD_SEQUENCE.md`, and `PROJECT_HISTORY.md` exclusively in the repository root and removed all duplicate copies in `chess-4-board/`, `godot-webview/`, and `Documents/AI_Markdown/`.
+3. **Renamed Board System Menu Button to "Chess 4 Board Menu":**
+   - Updated the custom Board OS pause menu button title from `"Web Menu"` to `"Chess 4 Board Menu"` in both `root.gd` and `GodotWebView.ensureBoardPauseContextRegistered()`.
 
 ---
 
@@ -174,10 +176,10 @@ Because the Board OS enforces native SDK validation (`libboard.so` / `libnativeB
 ### Opening & Exiting via Board System Menu
 * **Board System Menu Button (Hardware/OS Overlay):**
   * **Resume:** Returns to the current web app
-  * **Web Menu:** Opens the centered **Chess 4 Board** `menuCard` overlay
+  * **Chess 4 Board Menu:** Opens the centered **Chess 4 Board** `menuCard` overlay
   * **Exit to Library:** Terminates the app cleanly via `SessionManagerBridge.terminateApplication()` and returns to the Board OS Library
 
-### Centered Web Menu Card (`menuCard`)
+### Centered Chess 4 Board Menu Card (`menuCard`)
 * **Primary Chess Sites:**
   * `♟  Chess.com` — `https://www.chess.com`
   * `♟  ChessKids.com` — `https://www.chesskids.com`

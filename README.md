@@ -11,7 +11,7 @@ Because the Board OS validates all installed APKs against its native SDK (`libbo
 * **Board OS System Menu Integration:**
   * Pressing the Board hardware/system menu button opens the native Board OS overlay with three actions:
     * **Resume** — Return to the active web app.
-    * **Web Menu** — Open the centered **Chess 4 Board** launcher and control card.
+    * **Chess 4 Board Menu** — Open the centered **Chess 4 Board** launcher and control card.
     * **Exit to Library** — Immediately terminate the app via `SessionManagerBridge` and return to the Board OS Library.
 * **100% Native Multi-Touch Passthrough:**
   * Configures `BoardNativePlugin` before SDK initialization so `SystemOverlayService` binds cleanly without swallowing raw Android touch events—preserving smooth dragging, scrolling, and multi-touch gestures in the `WebView`.
@@ -89,7 +89,7 @@ From the repository root:
 | **`↺`** | Reload the current page | — |
 | **`🖥`** / **`📱`** | Toggle Desktop (`🖥`) vs. Mobile (`📱`) User-Agent for current site | **3s hold:** Save as new global default User-Agent |
 | **`90°`** | Rotate clockwise (`0°` → `90°` → `180°` → `270°`) | Reset to default Landscape (`0°`) |
-| **`⬇`** | Close the Web Menu overlay | — |
+| **`⬇`** | Close the Chess 4 Board Menu overlay | — |
 
 ---
 
