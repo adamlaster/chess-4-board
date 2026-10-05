@@ -6,6 +6,7 @@ The following project-wide files must exist **exclusively** in the repository ro
 - `BUILD_SEQUENCE.md` — Detailed 4-step Gradle AAR -> Godot CLI export -> `board-connect` deployment pipeline.
 - `PROJECT_HISTORY.md` — Complete chronological engineering log, architectural decisions, and feature roadmap.
 - `build_and_deploy.sh` — Single automated CLI build and deployment script.
+- `.gitignore` — Single root git ignore configuration for macOS, Godot 4+, Gradle/Android, and IDEs.
 
 **Do NOT** create or sync duplicate copies of these files inside `chess-4-board/`, `godot-webview/`, or `~/Documents/AI_Markdown/`.
 

@@ -1,0 +1,47 @@
+# ==============================================================================
+# Chess 4 Board — Root .gitignore
+# ==============================================================================
+
+# --- macOS / OS Files ---
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+Thumbs.db
+
+# --- Godot 4+ (chess-4-board) ---
+.godot/
+chess-4-board/.godot/
+chess-4-board/android/
+*.translation
+
+# --- Android & Gradle (godot-webview) ---
+.gradle/
+**/.gradle/
+**/build/
+local.properties
+**/local.properties
+*.iml
+.cxx/
+.externalNativeBuild/
+captures/
+
+# --- IDEs & Editors ---
+.idea/
+**/.idea/
+.vscode/
+**/.vscode/
+*.swp
+*.swo
+*~
+
+# --- Packaged Binaries & Signing Keys ---
+*.apk
+*.aab
+*.ap_
+*.dex
+*.keystore
+*.jks
+
+# Keep compiled plugin & Board SDK AARs inside chess-4-board/addons/
+!chess-4-board/addons/**/*.aar
