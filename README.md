@@ -34,6 +34,7 @@ Because the Board OS validates all installed APKs against its native SDK (`libbo
 ```text
 Chess4Board/
 ├── README.md                 # Project overview & quick reference
+├── AGENTS.md                 # Always-on workspace rules & conventions
 ├── BUILD_SEQUENCE.md         # Detailed 4-step build & deployment guide
 ├── PROJECT_HISTORY.md        # Chronological engineering log & roadmap
 ├── build_and_deploy.sh       # One-step CLI build, export & deploy script
