@@ -1,0 +1,1 @@
+/Users/adamlaster/Development/BoardGames/chess-4-board/build_and_deploy.sh
