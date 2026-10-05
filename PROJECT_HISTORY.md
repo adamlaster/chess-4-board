@@ -18,7 +18,7 @@ Because the Board OS enforces native SDK validation (`libboard.so` / `libnativeB
 | **Native Android Plugin (`godot-webview`)** | `/Users/adamlaster/Development/BoardGames/Chess4Board/godot-webview` | Custom Java Android AAR library (`GodotWebView.java`) providing the Chromium `WebView`, categorized app launcher, back/zoom/refresh/UA/rotate controls, HTML5 fullscreen video handler, and DRM permission bridge. |
 | **Automated Build & Deploy Pipeline** | `/Users/adamlaster/Development/BoardGames/Chess4Board/build_and_deploy.sh` | Single-command root CLI script that compiles Debug/Release AARs via Gradle, copies them into `addons/webview/`, exports `Chess4Board.apk` headlessly to `/Users/adamlaster/Development/BoardGames/output/Chess4Board.apk`, and deploys/launches on the Board device via `board-connect`. |
 | **APK Output Directory** | `/Users/adamlaster/Development/BoardGames/output` | Out-of-tree build output directory where `Chess4Board.apk` is exported and deployed from (keeping large APK binaries outside the git repository). |
-| **Root Documentation** | `/Users/adamlaster/Development/BoardGames/Chess4Board/` | Single canonical location for `BUILD_SEQUENCE.md` and `PROJECT_HISTORY.md`. |
+| **Root Documentation** | `/Users/adamlaster/Development/BoardGames/Chess4Board/` | Single canonical location for `README.md`, `BUILD_SEQUENCE.md`, and `PROJECT_HISTORY.md`. |
 
 ---
 
