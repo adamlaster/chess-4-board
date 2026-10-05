@@ -61,4 +61,3 @@ func _on_pause_result(result: BoardPauseResult) -> void:
 			Engine.max_fps = 60
 			OS.low_processor_usage_mode = false
 			Board.application.quit()
-

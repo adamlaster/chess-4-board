@@ -18,13 +18,13 @@ YELLOW='\033[0;33m'
 RED='\033[0;31m'
 NC='\033[0m' # No Color
 
-# Base Directories (resolved relative to this script so it works from any checkout)
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-CHESS_DIR="$SCRIPT_DIR"
-PLUGIN_DIR="$(cd "$SCRIPT_DIR/../godot-webview/GodotWebView" && pwd)"
+# Base Directories (resolved relative to this root script so it works from any checkout)
+ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+CHESS_DIR="$ROOT_DIR/chess-4-board"
+PLUGIN_DIR="$ROOT_DIR/godot-webview/GodotWebView"
 AAR_OUT_DIR="$PLUGIN_DIR/GodotWebView/build/outputs/aar"
 TARGET_ADDONS_DIR="$CHESS_DIR/addons/webview"
-OUTPUT_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)/output"
+OUTPUT_DIR="$(cd "$ROOT_DIR/.." && pwd)/output"
 APK_PATH="$OUTPUT_DIR/Chess4Board.apk"
 
 # Tool Paths and Fallbacks

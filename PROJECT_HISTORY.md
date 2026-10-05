@@ -16,9 +16,9 @@ Because the Board OS enforces native SDK validation (`libboard.so` / `libnativeB
 | **Root Workspace (`Chess4Board`)** | `/Users/adamlaster/Development/BoardGames/Chess4Board` | Top-level repository root containing both `chess-4-board` and `godot-webview`. |
 | **Host Godot App (`chess-4-board`)** | `/Users/adamlaster/Development/BoardGames/Chess4Board/chess-4-board` | Godot project, Board SDK integration, 3-second custom splash screen (`root.gd`), adaptive launcher icons, and APK export configuration (`export_presets.cfg`). |
 | **Native Android Plugin (`godot-webview`)** | `/Users/adamlaster/Development/BoardGames/Chess4Board/godot-webview` | Custom Java Android AAR library (`GodotWebView.java`) providing the Chromium `WebView`, categorized app launcher, back/zoom/refresh/UA/rotate controls, HTML5 fullscreen video handler, and DRM permission bridge. |
-| **Automated Build & Deploy Pipeline** | `/Users/adamlaster/Development/BoardGames/Chess4Board/chess-4-board/build_and_deploy.sh` | Single-command CLI script that compiles Debug/Release AARs via Gradle, copies them into `addons/webview/`, exports `Chess4Board.apk` headlessly to `/Users/adamlaster/Development/BoardGames/output/Chess4Board.apk`, and deploys/launches on the Board device via `board-connect`. |
+| **Automated Build & Deploy Pipeline** | `/Users/adamlaster/Development/BoardGames/Chess4Board/build_and_deploy.sh` | Single-command root CLI script that compiles Debug/Release AARs via Gradle, copies them into `addons/webview/`, exports `Chess4Board.apk` headlessly to `/Users/adamlaster/Development/BoardGames/output/Chess4Board.apk`, and deploys/launches on the Board device via `board-connect`. |
 | **APK Output Directory** | `/Users/adamlaster/Development/BoardGames/output` | Out-of-tree build output directory where `Chess4Board.apk` is exported and deployed from (keeping large APK binaries outside the git repository). |
-| **Documentation Hub** | `/Users/adamlaster/Documents/AI_Markdown/` | Central markdown documentation (`BUILD_SEQUENCE.md` and `PROJECT_HISTORY.md`). |
+| **Root Documentation** | `/Users/adamlaster/Development/BoardGames/Chess4Board/` | Single canonical location for `BUILD_SEQUENCE.md` and `PROJECT_HISTORY.md`. |
 
 ---
 
@@ -155,6 +155,17 @@ Because the Board OS enforces native SDK validation (`libboard.so` / `libnativeB
    - **Long-pressing `90°`** immediately resets the screen back to the default `SCREEN_ORIENTATION_LANDSCAPE` (index `0`) with no dialog required.
 4. **Expanded Web Category (`Google Photos`, `Google Maps`, `Reddit`, `Wikipedia`, `Weather`) & Streaming Additions (`Disney+`, `Prime Video`):**
    - Expanded `Extra Apps` to **18 apps** across `Games (6)`, `Video (6)`, and `Web (6)`.
+
+---
+
+### Phase 9: Godot Resource Cleanup & Canonical Root Script / Documentation
+1. **Removed Unused Godot Resources in `chess-4-board`:**
+   - Deleted legacy test scripts and `.uid` sidecars (`app.gd`, `button_2.gd`, `button_3.gd`, `button_test.gd`, `panel_container.gd`, `v_box_container.gd`).
+   - Removed unused icon and import files (`icon.svg`, `icon_square.png`, `splash_download.png.import`) and orphaned `.godot/imported/` cache entries.
+   - Removed unused `assets/models/model.tflite` (~952 KB), as `Chess 4 Board` uses touch passthrough rather than piece glyph detection.
+2. **Consolidated Single Canonical `build_and_deploy.sh`, `BUILD_SEQUENCE.md`, and `PROJECT_HISTORY.md` in Root (`/Users/adamlaster/Development/BoardGames/Chess4Board/`):**
+   - Moved `build_and_deploy.sh` to the repository root (`/Users/adamlaster/Development/BoardGames/Chess4Board/build_and_deploy.sh`) and removed duplicate scripts from `chess-4-board/` and `godot-webview/`.
+   - Consolidated `BUILD_SEQUENCE.md` and `PROJECT_HISTORY.md` exclusively in the repository root and removed all duplicate copies in `chess-4-board/`, `godot-webview/`, and `Documents/AI_Markdown/`.
 
 ---
 
