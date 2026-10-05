@@ -33,6 +33,7 @@ Because the Board OS validates all installed APKs against its native SDK (`libbo
 
 ```text
 Chess4Board/
+├── .gitignore                # Unified root git ignore (macOS, Godot, Gradle, IDEs)
 ├── README.md                 # Project overview & quick reference
 ├── AGENTS.md                 # Always-on workspace rules & conventions
 ├── BUILD_SEQUENCE.md         # Detailed 4-step build & deployment guide

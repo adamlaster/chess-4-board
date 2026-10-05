@@ -168,6 +168,9 @@ Because the Board OS enforces native SDK validation (`libboard.so` / `libnativeB
    - Consolidated `README.md`, `AGENTS.md`, `BUILD_SEQUENCE.md`, and `PROJECT_HISTORY.md` exclusively in the repository root and removed all duplicate copies in `chess-4-board/`, `godot-webview/`, and `Documents/AI_Markdown/`.
 3. **Renamed Board System Menu Button to "Chess 4 Board Menu":**
    - Updated the custom Board OS pause menu button title from `"Web Menu"` to `"Chess 4 Board Menu"` in both `root.gd` and `GodotWebView.ensureBoardPauseContextRegistered()`.
+4. **Unified Root `.gitignore` & Git Index Cleanup:**
+   - Created a single canonical root `.gitignore` covering macOS (`.DS_Store`), Godot 4+ (`.godot/`, `chess-4-board/android/`), Android/Gradle (`.gradle/`, `**/build/`, `local.properties`), IDEs (`.idea/`, `.vscode/`), and packaged binaries (`*.apk`, while preserving `chess-4-board/addons/**/*.aar`).
+   - Removed duplicate sub-`.gitignore` files and untracked previously committed `.DS_Store`, `.gradle/`, `.idea/`, `.vscode/`, and `build/` cache files from the git index.
 
 ---
 
