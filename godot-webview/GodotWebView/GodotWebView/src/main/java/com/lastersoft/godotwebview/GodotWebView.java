@@ -96,12 +96,17 @@ public class GodotWebView extends GodotPlugin {
             new SiteEntry("▶️  YouTube", "https://www.youtube.com"),
             new SiteEntry("🦚  Peacock", "https://www.peacocktv.com"),
             new SiteEntry("🦊  Fox One", "https://www.fox.com"),
-            new SiteEntry("⚾  MLB.TV", "https://www.mlb.com/tv")
+            new SiteEntry("⚾  MLB.TV", "https://www.mlb.com/tv"),
+            new SiteEntry("🏰  Disney+", "https://www.disneyplus.com"),
+            new SiteEntry("📦  Prime Video", "https://www.amazon.com/gp/video/storefront")
         )),
         new CategoryEntry("🌐  Web", Arrays.asList(
             new SiteEntry("🔍  Google", "https://www.google.com"),
             new SiteEntry("🖼️  Google Photos", "https://photos.google.com"),
-            new SiteEntry("🗺️  Google Maps", "https://www.google.com/maps")
+            new SiteEntry("🗺️  Google Maps", "https://www.google.com/maps"),
+            new SiteEntry("👽  Reddit", "https://www.reddit.com"),
+            new SiteEntry("📖  Wikipedia", "https://www.wikipedia.org"),
+            new SiteEntry("⛅  Weather", "https://weather.com")
         ))
     );
 
